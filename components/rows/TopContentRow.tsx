@@ -4,7 +4,7 @@ import VideoCard from "@/components/cards/VideoCard";
 import { saveRecent } from "@/lib/recent";
 
 export default function TopContentRow({ videos = [] }: any) {
-  if (!videos.length) return null; // 👈 no crash, no empty UI
+  if (!videos.length) return null; 
 
   return (
     <section className="px-6 md:px-16 space-y-4">

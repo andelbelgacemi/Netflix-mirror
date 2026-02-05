@@ -8,7 +8,12 @@ export default function CarouselRow() {
         Featured Today
       </h2>
 
-      <div className="flex gap-6 overflow-x-scroll px-16">
+      <div className="flex
+      gap-6
+      overflow-x-auto
+      overflow-y-visible
+      py-4
+      scroll-smooth">
         {movies.map((movie) => (
           <LongCard key={movie.id} {...movie} />
         ))}
